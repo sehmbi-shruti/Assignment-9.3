@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dog</title>
+</head>
+<body>
+<script>
+class Dog
+{
+constructor(name)
+    {this.name = name;}
+speak()
+    {return "Woof";}
+}
+class Labrador extends Dog
+{
+constructor(name,color,weight)
+   {
+    super(name);
+	this.color = color;
+	this.weight = weight;
+   }
+speak()
+    {
+    return "Labrador says Woof";
+	}
+};
+let lab = new Labrador("Copper", "Brown", 25);
+console.log(lab);
+lab.speak();
+</script>
+</body>
+</html>
